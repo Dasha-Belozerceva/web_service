@@ -1,0 +1,13 @@
+com\db\model\Advert.class
+com\db\dao\AdvertDao.class
+com\db\model\Person.class
+com\db\dao\PersonDao.class
+com\db\controller\PersonController.class
+com\db\service\PersonService.class
+com\db\service\AdvertService.class
+com\db\dao\IAdvertDao.class
+com\db\service\IPersonService.class
+com\db\dao\IPersonDao.class
+com\db\controller\AdvertController.class
+com\db\service\IAdvertService.class
+com\db\conf\MyAppInitializer.class
