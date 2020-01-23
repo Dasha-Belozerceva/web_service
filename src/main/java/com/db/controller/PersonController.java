@@ -49,7 +49,7 @@ public class PersonController {
     @PUT
     @Path("/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response editPerson(Person person, int id) {
+    public Response editPerson(Person person, @PathParam("id") int id) {
         boolean editPerson = personService.editPerson(person, id);
         if (editPerson) {
             return Response.status(204).entity("Person edited").build();

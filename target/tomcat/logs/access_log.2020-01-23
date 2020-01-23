@@ -1,13 +1,1 @@
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:00:09:54 +0300] "GET /api/person HTTP/1.1" 404 - http-bio-8080-exec-9 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:00:10:46 +0300] "GET /web_service/api/person HTTP/1.1" 404 967 http-bio-8080-exec-9 4
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:00:10:54 +0300] "GET /api/person HTTP/1.1" 404 - http-bio-8080-exec-9 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:02:50:25 +0300] "GET /api/person/1 HTTP/1.1" 404 - http-bio-8080-exec-5 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:01:22 +0300] "GET /api/person HTTP/1.1" 404 - http-bio-8080-exec-10 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:01:50 +0300] "GET /api/ HTTP/1.1" 404 - http-bio-8080-exec-8 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:01:59 +0300] "GET / HTTP/1.1" 404 - http-bio-8080-exec-2 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:02:07 +0300] "GET /web_service HTTP/1.1" 302 - http-bio-8080-exec-9 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:02:11 +0300] "GET /web_service/ HTTP/1.1" 200 61 http-bio-8080-exec-9 2244
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:02:21 +0300] "GET /web_service/api HTTP/1.1" 404 967 http-bio-8080-exec-5 3713
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:02:28 +0300] "GET /web_service/api/person HTTP/1.1" 404 967 http-bio-8080-exec-10 262
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:03:30 +0300] "GET /api/person HTTP/1.1" 404 - http-bio-8080-exec-1 0
-0:0:0:0:0:0:0:1 - - [23/Jan/2020:03:03:34 +0300] "GET /api/person HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2020:14:28:55 +0300] "GET /api/person HTTP/1.1" 404 - http-bio-8080-exec-2 0

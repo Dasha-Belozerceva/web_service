@@ -34,7 +34,7 @@ public class AdvertController {
     }
 
     @GET
-    @Path("/{id}")
+    @Path("person_id/{person_id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAdvertsByPersonID(@PathParam("person_id") int person_id) {
         List<Advert> advert = advertService.getAdvertsByPersonID(person_id);
@@ -58,7 +58,7 @@ public class AdvertController {
     @PUT
     @Path("/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response insertAdvert(Advert advert, int id) {
+    public Response insertAdvert(Advert advert, @PathParam("id") int id) {
         boolean editAdvert = advertService.editAdvert(advert, id);
         if (editAdvert) {
             return Response.status(204).entity("Advert edited").build();
