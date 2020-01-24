@@ -113,7 +113,7 @@ public class AdvertDao implements IAdvertDao{
         Connection connection = MyAppInitializer.getConnection();
         try{
             PreparedStatement ps = connection.prepareStatement("UPDATE advert SET " +
-                    "head=?, body=?, category=?, phone_number=? WHERE id=?");
+                    "head=?, body=?, category=?, phone_number=? WHERE id=" + id);
             ps.setString(1, advert.getHead());
             ps.setString(2, advert.getBody());
             ps.setString(3, advert.getPhone_number());

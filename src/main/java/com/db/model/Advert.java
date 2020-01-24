@@ -74,6 +74,7 @@ public class Advert {
     }
 
     public LocalDateTime getDate_of_creation() {
+        date_of_creation = LocalDateTime.now();
         return date_of_creation;
     }
 

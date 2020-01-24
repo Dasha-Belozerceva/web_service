@@ -4,7 +4,6 @@ import com.db.dao.IAdvertDao;
 import com.db.model.Advert;
 
 import java.sql.SQLException;
-import javax.inject.Inject;
 import java.util.List;
 
 public class AdvertService implements IAdvertService{
