@@ -3,7 +3,7 @@ import com.db.conf.MyAppInitializer;
 import com.db.model.Advert;
 
 import java.sql.*;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class AdvertDao implements IAdvertDao{
         Connection connection = MyAppInitializer.getConnection();
         try {
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM person WHERE id=" + id);
+            ResultSet rs = stmt.executeQuery("SELECT * FROM advert WHERE id=" + id);
 
             Advert advert = null;
             while (rs.next()) {
@@ -39,7 +39,7 @@ public class AdvertDao implements IAdvertDao{
         Connection connection = MyAppInitializer.getConnection();
         try {
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM person");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM advert");
 
             while(rs.next()){
                 Advert advert = new Advert();
@@ -65,7 +65,7 @@ public class AdvertDao implements IAdvertDao{
         Connection connection = MyAppInitializer.getConnection();
         try {
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM person WHERE person_id=" + person_id);
+            ResultSet rs = stmt.executeQuery("SELECT * FROM advert WHERE person_id=" + person_id);
 
             Advert advert = null;
             while (rs.next()) {

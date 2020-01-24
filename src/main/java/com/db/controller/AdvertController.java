@@ -58,7 +58,7 @@ public class AdvertController {
     @PUT
     @Path("/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response insertAdvert(Advert advert, @PathParam("id") int id) {
+    public Response editAdvert(Advert advert, @PathParam("id") int id) {
         boolean editAdvert = advertService.editAdvert(advert, id);
         if (editAdvert) {
             return Response.status(204).entity("Advert edited").build();

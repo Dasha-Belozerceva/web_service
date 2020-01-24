@@ -13,6 +13,7 @@ import java.util.List;
 public class PersonController {
     PersonService personService = new PersonService();
 
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllPersons(){
@@ -22,6 +23,13 @@ public class PersonController {
         }
         return Response.status(200).entity(persons).build();
     }
+
+   /* @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Person getTestPerson(){
+        Person person = new Person(1, "Darya", "Belozertseva", "dbelosertseva@gmail.com", "market");
+        return person;
+    }*/
 
     @GET
     @Path("/{id}")

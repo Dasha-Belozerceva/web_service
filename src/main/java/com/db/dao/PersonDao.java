@@ -23,6 +23,7 @@ public class PersonDao implements IPersonDao {
                 person.setLast_Name(rs.getString(3));
                 person.setEmail(rs.getString(4));
                 person.setCategory(rs.getString(5));
+                allPersons.add(person);
             }
             return allPersons;
         } catch (SQLException e) {
@@ -77,15 +78,13 @@ public class PersonDao implements IPersonDao {
     public boolean editPerson(Person person, int id) {
         Connection connection = MyAppInitializer.getConnection();
         try{
-            PreparedStatement ps = connection.prepareStatement("UPDATE person SET first_name=?, last_name=?, email=?, category=? WHERE id=?");
+            PreparedStatement ps = connection.prepareStatement("UPDATE person SET first_name=?, last_name=?, email=?, category=? WHERE id=" + id);
             ps.setString(1, person.getFirst_Name());
             ps.setString(2, person.getLast_Name());
             ps.setString(3, person.getEmail());
             ps.setString(4, person.getCategory());
-            int i = ps.executeUpdate();
-            if(i == 1) {
-                return true;
-            }
+            ps.executeUpdate();
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
         }

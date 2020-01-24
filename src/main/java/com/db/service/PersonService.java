@@ -1,6 +1,7 @@
 package com.db.service;
 
 import com.db.dao.IPersonDao;
+import com.db.dao.PersonDao;
 import com.db.model.Person;
 
 import java.sql.SQLException;
@@ -9,8 +10,8 @@ import java.util.List;
 
 
 public class PersonService implements IPersonService {
-    @Inject
-    private IPersonDao personDao;
+
+    private IPersonDao personDao = new PersonDao();
 
     @Override
     public List<Person> getAllPersons() {

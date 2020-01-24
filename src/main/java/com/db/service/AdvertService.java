@@ -1,4 +1,5 @@
 package com.db.service;
+import com.db.dao.AdvertDao;
 import com.db.dao.IAdvertDao;
 import com.db.model.Advert;
 
@@ -7,9 +8,7 @@ import javax.inject.Inject;
 import java.util.List;
 
 public class AdvertService implements IAdvertService{
-
-    @Inject
-    private IAdvertDao advertDao;
+    private IAdvertDao advertDao = new AdvertDao();
 
     @Override
     public Advert getAdvert(int id) {
