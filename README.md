@@ -89,6 +89,7 @@ editAdvert(Advert advert, int id)
 >"category":	"category",  
 >"phone_number":	"phone_number"  
 >}  
+
 *date_of_creation generates automaticly*  
 **Edit advert with those fields and this id. Fields can be changed or to be the same**  
 201 - message: "Advert edited"/ sucsessful request  
@@ -126,7 +127,8 @@ insertPerson(Person person)
 > "last_Name": "last_name",  
 > "email":	"email",  
 > "category":	"category"  
->}  
+>} 
+
 *id generates automaticly*  
 **Insert person with those fields**  
 201 - message: "Person inserted"/ sucsessful request  
@@ -143,6 +145,7 @@ editPerson(Person person, int id)
 > "email":	"email",  
 > "category":	"category"  
 >}  
+
 **Edit person with those fields and this id. Fields can be changed or to be the same**  
 201 - message: "Person edited"/ sucsessful request  
 404 - bad request  
