@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [27/Jan/2020:00:35:38 +0300] "GET /web_service/ HTTP/1.1" 200 1567 http-bio-8080-exec-1 83
+0:0:0:0:0:0:0:1 - - [27/Jan/2020:00:36:01 +0300] "GET /web_service/api/openapi.json HTTP/1.1" 200 3117 http-bio-8080-exec-3 1521

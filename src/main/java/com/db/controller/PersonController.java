@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import java.sql.SQLException;
 import java.util.List;
 
-@Path("/person")
+@Path("person")
 public class PersonController {
     PersonService personService = new PersonService();
 
