@@ -20,22 +20,18 @@
 **Path for starting API: http://localhost:8080/web_service/api/
 
 ## Schemas
-**Advert**{
->id	integer($int32)  
-
->person_id	integer($int32)  
-
->head	string  
-
->body	string  
-
->category	string  
-
->phone_number	string  
-
->date_of_creation	string($date-time)  
-
->}
+**Advert**
+'''
+{
+id	integer($int32)  
+person_id	integer($int32)  
+head	string  
+body	string  
+category	string  
+phone_number	string  
+date_of_creation	string($date-time)  
+}
+'''
 
 **Person**{
 >id	integer($int32)
