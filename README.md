@@ -2,34 +2,48 @@
 ### Third home task for EPAM Test Automation courses
 ## Users and Adverts API web service
 #### List of technologies used for creating:
-+ postgresql
-+ maven
-+ postman
-+ REST
-+ jax rs, jersey
-+ JSON
-+ tomcat 7 
++ postgresql  
+
++ maven  
+
++ postman  
+
++ REST  
+
++ jax rs, jersey  
+
++ JSON  
+
++ tomcat 7   
+
 
 **Path for starting API: http://localhost:8080/web_service/api/
 
 ## Schemas
 **Advert**{
-id	integer($int32)
-person_id	integer($int32)
-head	string
-body	string
-category	string
-phone_number	string
-date_of_creation	string($date-time)
-}
+>id	integer($int32)  
+
+>person_id	integer($int32)  
+
+>head	string  
+
+>body	string  
+
+>category	string  
+
+>phone_number	string  
+
+>date_of_creation	string($date-time)  
+
+>}
 
 **Person**{
-id	integer($int32)
-email	string
-category	string
-last_Name	string
-first_Name	string
-}
+>id	integer($int32)
+>email	string
+>category	string
+>last_Name	string
+>first_Name	string
+>}
 
 
 ### Advert schema requests:
